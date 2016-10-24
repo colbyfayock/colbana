@@ -1,0 +1,103 @@
+$gutter: modular-scale(1, 2em, $golden) !default;
+
+.container {
+
+    @include outer-container(1140px);
+    padding: 0 5em;
+
+}
+
+.row {
+
+    @include row();
+    margin: 5em 0;
+
+    .row {
+        margin: 0;
+    }
+
+}
+
+.offset {
+    margin: 0 -5em;
+}
+
+
+$grid-number-map:
+    ( 1  'one' )
+    ( 2  'two' )
+    ( 3  'three' )
+    ( 4  'four' )
+    ( 5  'five' )
+    ( 6  'six' )
+    ( 7  'seven' )
+    ( 8  'eight' )
+    ( 9  'nine' )
+    ( 10 'ten' )
+    ( 11 'eleven' )
+    ( 12 'twelve' )
+;
+
+@each $grid-number in $grid-number-map {
+
+    $value: nth($grid-number, 1);
+    $name: nth($grid-number, 2);
+
+    .#{$name}col {
+
+        @include span-columns($value);
+
+        &:nth-child( #{12/$value}n ) {
+            margin-right: 0;
+        }
+
+        &:nth-child( #{12/$value}n + 1 ) {
+            clear: left;
+        }
+
+        &.lastcol {
+            margin-right: 0;
+        }
+
+        .row-grid & {
+
+            margin-bottom: 2.3576515979%;
+
+        }
+
+        @include media($mobile) {
+
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 1.4em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+    .shift#{$name} {
+
+        @include shift($value);
+        margin-right: $value;
+
+        @include media($mobile) {
+            @include shift(0);
+        }
+
+    }
+
+    .unshift#{$name} {
+
+        @include shift($value - ( $value * 2 ));
+
+        @include media($mobile) {
+            @include shift(0);
+        }
+
+    }
+
+}

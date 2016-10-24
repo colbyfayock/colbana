@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+$font-family-base: 'Domine', Georgia, times, serif;
+$font-family-script: 'Dancing Script', $font-family-base;
+
+$font-size-document: 22px;
+$font-size-document-mobile: 18px;
+$font-size-base: 1em;
+$line-height-base: $font-size-base * 1.333333333;
+
+$font-size-h1: $font-size-base * 2.125;
+$font-size-h2: $font-size-h1 * 0.823529412;
+$font-size-h3: $font-size-h1 * 0.705882353;
+$font-size-h4: $font-size-h1 * 0.588235294;
+$font-size-h5: $font-size-h1 * 0.470588235;
+$font-size-h6: $font-size-h1 * 0.470588235;
+$font-size-copy: $font-size-base;
+
+$margin-bottom-h1: $font-size-base * 0.833333334;
+$margin-bottom-h2: $margin-bottom-h1 * 1.2143;
+$margin-bottom-h3: $margin-bottom-h1 * 1.41667;
+$margin-bottom-h4: $margin-bottom-h1 * 1.7;
+$margin-bottom-h5: $margin-bottom-h1 * 2.125;
+$margin-bottom-h6: $margin-bottom-h1 * 2.125;
+$margin-bottom-copy: $font-size-copy * 0.885416668;
+
+$margin-top-h1: $margin-bottom-h1 * 1.5;
+$margin-top-h2: $margin-bottom-h2 * 1.5;
+$margin-top-h3: $margin-bottom-h3 * 1.5;
+$margin-top-h4: $margin-bottom-h4 * 1.5;
+$margin-top-h5: $margin-bottom-h5 * 1.5;
+$margin-top-h6: $margin-bottom-h6 * 1.5;
+$margin-top-copy: $margin-bottom-copy / 2;
+
+$font-weight-normal: 400;
+$font-weight-strong: 700;
+$font-weight-stronger: 800;

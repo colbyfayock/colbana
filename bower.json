@@ -1,0 +1,12 @@
+{
+  "name": "colbana",
+  "private": true,
+  "devDependencies": {
+    "bourbon": "~4.2.3",
+    "fontawesome": "~4.3.0",
+    "modernizr": "~2.8.3",
+    "neat": "~1.7.2",
+    "normalize.css": "~3.0.3",
+    "photoswipe": "^4.1.1"
+  }
+}

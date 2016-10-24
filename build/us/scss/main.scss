@@ -1,0 +1,91 @@
+/*!
+Theme Name: WP-Init
+Theme URI: http://wordpress.com
+Description: Wordpress Init
+Author: Colby Fayock
+Author URI: http://colbyfayock.com
+Version: 1.0
+*/
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../../bower_components/neat/app/assets/stylesheets/neat';
+@import '../../../bower_components/normalize.css/normalize';
+
+@import 'settings/settings';
+@import 'util/util';
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $color-primary;
+}
+
+body {
+    color: $color-secondary;
+    background-color: white;
+    background: white url('../images/flowers.jpg') no-repeat top center;
+    background-size: 50em;
+    margin: 0;
+}
+
+.button-naked {
+
+    .fa-heart {
+
+        position: relative;
+        @include transform(
+            rotate(10deg)
+            translate3d(-.3em, -0.4em, 0)
+            scale(.7)
+        )
+        margin-right: -1em;
+
+        &:after {
+            @extend .fa-heart:before;
+            display: block;
+            position: absolute;
+            top: -.6em;
+            right: -.8em;
+            opacity: .8;
+            @include transform(
+                rotate(-10deg)
+                scale(.6)
+            );
+        }
+
+    }
+
+    &:hover {
+
+        .fa-heart {
+
+            @include transform(
+                rotate(0deg)
+                translate3d(-.3em, -0.4em, 0)
+                scale(.7)
+            )
+
+            &:after {
+                @include transform(
+                    rotate(20deg)
+                    scale(.6)
+                );
+            }
+
+        }
+
+    }
+
+}
+
+
+@import 'partials/partials';
+@import 'pages/pages';
+@import 'modules/modules';
+
+@import '../../../bower_components/fontawesome/scss/font-awesome';
