@@ -18,6 +18,10 @@ module.exports = function(grunt) {
                     // Bower components
 
                     './bower_components/modernizr/modernizr.js',
+                    './bower_components/photoswipe/dist/photoswipe.js',
+                    './bower_components/photoswipe/dist/photoswipe-ui-default.js',
+
+                    './build/us/js/components/**/*.js',
 
 
                     // Main

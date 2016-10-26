@@ -84,7 +84,7 @@
                 </p>
 
                 <p class="push-top-two push-bottom-two offset">
-                    <img src="http://unsplash.it/1140/400">
+                    <img src="images/ana.jpg">
                 </p>
 
                 <p>
@@ -102,7 +102,7 @@
                 </p>
 
                 <p class="push-top-two push-bottom-two offset">
-                    <img src="http://unsplash.it/1140/400">
+                    <img src="images/colby.jpg">
                 </p>
 
                 <p>
@@ -132,27 +132,39 @@
             <div class="row row-grid photo">
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-01.jpg" data-gallery="snapshots" data-size="960x720">
+                        <img src="images/thumb-01.jpg">
+                    </a>
                 </div>
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-02.jpg" data-gallery="snapshots" data-size="640x640">
+                        <img src="images/thumb-02.jpg">
+                    </a>
                 </div>
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-03.jpg" data-gallery="snapshots" data-size="960x720">
+                        <img src="images/thumb-03.jpg">
+                    </a>
                 </div>
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-04.jpg" data-gallery="snapshots" data-size="676x1013">
+                        <img src="images/thumb-04.jpg">
+                    </a>
                 </div>
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-05.jpg" data-gallery="snapshots" data-size="1080x1080">
+                        <img src="images/thumb-05.jpg">
+                    </a>
                 </div>
 
                 <div class="threecol">
-                    <img src="http://unsplash.it/400/400">
+                    <a class="gallery" href="images/photo-06.jpg" data-gallery="snapshots" data-size="720x960">
+                        <img src="images/thumb-06.jpg">
+                    </a>
                 </div>
 
             </div>
@@ -208,10 +220,77 @@
 
     </div>
 
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-    <script src="js/colbana.min.js"></script>
+    <script src="js/colbana.js"></script>
 
 </body>
 
