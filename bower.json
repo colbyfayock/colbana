@@ -7,6 +7,7 @@
     "modernizr": "~2.8.3",
     "neat": "~1.7.2",
     "normalize.css": "~3.0.3",
-    "photoswipe": "^4.1.1"
+    "photoswipe": "^4.1.1",
+    "hippify": "git://github.com/colbyfayock/hippify.git"
   }
 }

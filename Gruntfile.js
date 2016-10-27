@@ -20,6 +20,7 @@ module.exports = function(grunt) {
                     './bower_components/modernizr/modernizr.js',
                     './bower_components/photoswipe/dist/photoswipe.js',
                     './bower_components/photoswipe/dist/photoswipe-ui-default.js',
+                    './bower_components/hippify/hippify/hippify.js',
 
                     './build/us/js/components/**/*.js',
 
