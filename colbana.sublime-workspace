@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"gallery",
+				"gallery_items"
+			],
+			[
+				"item",
+				"item_array〔variable〕"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"display",
 				"display-ib"
 			],
@@ -148,10 +160,6 @@
 				"uppercase"
 			],
 			[
-				"text",
-				"text-transform"
-			],
-			[
 				"astor",
 				"astoria_web"
 			]
@@ -163,7 +171,80 @@
 			"file": "us/index.html",
 			"settings":
 			{
-				"buffer_size": 693,
+				"buffer_size": 19777,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3341,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.json",
+			"settings":
+			{
+				"buffer_size": 352,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/us/scss/util/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 3124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 316,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 291,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "br/index.html",
+			"settings":
+			{
+				"buffer_size": 1829,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/us/js/components/scrolling.js",
+			"settings":
+			{
+				"buffer_size": 706,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/us/js/components/photoswipe.js",
+			"settings":
+			{
+				"buffer_size": 1246,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -175,24 +256,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 117.0,
-		"last_filter": "dup",
+		"height": 227.0,
+		"last_filter": "delete",
 		"selected_items":
 		[
-			[
-				"dup",
-				"File: Duplicate"
-			],
-			[
-				"re",
-				"File: Rename"
-			],
 			[
 				"delete",
 				"File: Delete"
 			],
 			[
 				"ren",
+				"File: Rename"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"re",
 				"File: Rename"
 			],
 			[
@@ -282,6 +363,31 @@
 	],
 	"file_history":
 	[
+		"/Users/colby/Code/colbana/Gruntfile.js",
+		"/Users/colby/Code/colbana/build/us/scss/settings/_typography.scss",
+		"/Users/colby/Code/colbana/build/us/scss/util/_helpers.scss",
+		"/Users/colby/Code/colbana/build/us/scss/settings/_colors.scss",
+		"/Users/colby/Code/colbana/build/us/scss/util/_grid.scss",
+		"/Users/colby/Code/colbana/build/us/scss/main.scss",
+		"/Users/colby/Code/colbana/build/us/scss/util/_typography.scss",
+		"/Users/colby/Code/colbana/build/us/scss/util/_buttons.scss",
+		"/Users/colby/Code/colbana/build/us/js/main.js",
+		"/Users/colby/Code/colbana/colbana.sublime-project",
+		"/Users/colby/Code/colbana/bower_components/photoswipe/dist/photoswipe.js",
+		"/Users/colby/Code/colbana/us/index.html",
+		"/Users/colby/Code/colbana/build/us/scss/partials/_header.scss",
+		"/Users/colby/Code/colbana/build/us/scss/modules/_subheader.scss",
+		"/Users/colby/Code/colbana/build/us/scss/partials/_partials.scss",
+		"/Users/colby/Code/colbana/build/us/scss/modules/_modules.scss",
+		"/Users/colby/Code/colbana/build/us/scss/modules/_bio.scss",
+		"/Users/colby/Code/colbana/bower.json",
+		"/Users/colby/Code/colbana/node_modules/normalize-package-data/lib/typos.json",
+		"/Users/colby/Code/colbana/build/us/scss/partials/_footer.scss",
+		"/Users/colby/Code/colbana/build/us/scss/pages/_pages.scss",
+		"/Users/colby/Code/colbana/us/js/jquery.min.js",
+		"/Users/colby/Code/colbana/build/us",
+		"/Users/colby/Code/colbana/package.json",
+		"/Users/colby/Code/colbana/.gitignore",
 		"/Users/colby/Code/kim/content/themes/kim/templates/thankyou.php",
 		"/Users/colby/Code/kim/build/scss/global/_settings.scss",
 		"/Users/colby/Code/kim/build/scss/_style/layout/_buttons.scss",
@@ -384,36 +490,11 @@
 		"/Users/colby/Code/patriot/build/scss/settings/_typography.scss",
 		"/Users/colby/Code/patriot/content/themes/wp-init/page.php",
 		"/Users/colby/Code/patriot/build/scss/util/_typography.scss",
-		"/Users/colby/Code/patriot/build/scss/modules/_copy-columns.scss",
-		"/Users/colby/Code/patriot/build/scss/modules/_single-line.scss",
-		"/Users/colby/Code/patriot/build/js/main.js",
-		"/Users/colby/Code/patriot/content/themes/wp-init/header.php",
-		"/Users/colby/Code/patriot/build/scss/util/_helpers.scss",
-		"/Users/colby/Code/patriot/content/themes/wp-init/wrapper.php",
-		"/Users/colby/Code/patriot/build/scss/modules/_modules.scss",
-		"/Users/colby/Code/patriot/build/scss/partials/_footer.scss",
-		"/Users/colby/Code/patriot/.gitignore",
-		"/Users/colby/Code/patriot/build/scss/util/_util.scss",
-		"/Users/colby/Code/proposal.html",
-		"/Users/colby/Code/twitter/library/users/amazondeals.php",
-		"/Users/colby/Code/kim/content/themes/kim/partials/client-endorsements.php",
-		"/Users/colby/Code/twitter/library/users/users_followed.php",
-		"/Users/colby/Code/twitter/proposal.html",
-		"/Users/colby/Desktop/Google_2015_logo.svg",
-		"/Users/colby/Code/twitter/library/auth.php",
-		"/Users/colby/Code/twitter/library/actions/follow_users.php",
-		"/Users/colby/Code/twitter/library/actions/unfollow_users.php",
-		"/Users/colby/Code/astoria/astoria-web/assets/scss/modules/_navbar-publication.scss",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/video_embed/vimeo.html",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/video_list.html",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/track_player/track_player_hero.html",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/hero/track.html",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/grid/video.html",
-		"/Users/colby/Code/astoria/astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/track_player/track_player.html"
+		"/Users/colby/Code/patriot/build/scss/modules/_copy-columns.scss"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -430,6 +511,59 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"            \n",
+			"deploy",
+			"hippi",
+			"photo",
+			"row-grid",
+			"06",
+			"-06",
+			"-06.",
+			"06.jp",
+			"oto-06.",
+			"6",
+			"<img",
+			"http://www.patriotinn.com/",
+			"display",
+			"h4",
+			"strong",
+			"\" alt=",
+			"images/",
+			"<span class=\"button",
+			"button-na",
+			"button",
+			"<a href=\"",
+			"target",
+			"images/thumb-0",
+			"http://unsplash.it/400/400",
+			"http://unsplash.it/800/800\"",
+			"gallery",
+			"<img src",
+			"PhotoSwipeUI_Default",
+			"pswp_element",
+			"pswpElement",
+			"ine-height-ba",
+			"modernizr",
+			"';",
+			"align-center",
+			"asdf",
+			"$gutter",
+			"tps://unsp",
+			"h3 class=\"flat-bottom\">",
+			"{\n\n    font-size: $",
+			"font-size: ",
+			"p {",
+			"<h3>",
+			"<div class=\"row\">",
+			"copy",
+			"bio",
+			"h1",
+			"li><l",
+			"<p>",
+			"../../bower_co",
+			"../../bower_components/bourbon/app/assets/stylesheets/bourbon';\n@import '../../bower",
+			"sass",
+			"scss",
 			"</p>",
 			"<p>",
 			"versation.1.1.1.0.0.0.",
@@ -504,60 +638,7 @@
 			"Kevin ",
 			"-kevin",
 			"kevin",
-			"subscribeNewsletter",
-			"messageContainer",
-			"thatResource",
-			"subscribeNewsletter",
-			"<a h",
-			"newsletter-signup.php",
-			"p>",
-			"p",
-			"10em",
-			">",
-			"<",
-			"../",
-			"data",
-			"html_to_template",
-			"template",
-			"compile",
-			"build",
-			"compile",
-			"hippify",
-			"Mustache",
-			"template",
-			"tpl",
-			"mustache",
-			"asdfasdf",
-			"list",
-			"things",
-			"thingsToDo",
-			"name",
-			"methods",
-			"_this.$template",
-			"name",
-			"html",
-			"this",
-			"div",
-			"script",
-			"&#39;",
-			"-media-headline",
-			"max",
-			"background-color: black;",
-			"0",
-			"5px",
-			"<h1>",
-			"settings",
-			".text }\"",
-			"prop",
-			"100vw",
-			";",
-			"id",
-			"text",
-			"author:",
-			"http://placehold.it/1000x400/000000/c",
-			"<div>",
-			"Slider",
-			"ffffff"
+			"subscribeNewsletter"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -602,7 +683,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -611,7 +692,123 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 693,
+						"buffer_size": 19777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15418,
+								15421
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2693.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2387,
+								2387
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1036.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "build/us/scss/util/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 316,
 						"regions":
 						{
 						},
@@ -619,20 +816,137 @@
 						[
 							[
 								0,
-								693
+								316
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								231
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "br/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1576,
+								1576
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "build/us/js/components/scrolling.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								511,
+								511
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "build/us/js/components/photoswipe.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								666,
+								666
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 129.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -687,23 +1001,131 @@
 		"selected_items":
 		[
 			[
+				"gruntf",
+				"Gruntfile.js"
+			],
+			[
+				"grid.scs",
+				"build/us/scss/util/_grid.scss"
+			],
+			[
+				"index",
+				"us/index.html"
+			],
+			[
+				"grid.scss",
+				"build/us/scss/util/_grid.scss"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"gruntif",
+				"Gruntfile.js"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"typo",
+				"build/us/scss/util/_typography.scss"
+			],
+			[
+				"colo",
+				"build/us/scss/settings/_colors.scss"
+			],
+			[
+				"hlpers",
+				"build/us/scss/util/_helpers.scss"
+			],
+			[
+				"helpers",
+				"build/us/scss/util/_helpers.scss"
+			],
+			[
+				"typogra",
+				"build/us/scss/util/_typography.scss"
+			],
+			[
+				"typogr",
+				"build/us/scss/settings/_typography.scss"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"package.",
+				"package.json"
+			],
+			[
+				"buttons",
+				"build/us/scss/util/_buttons.scss"
+			],
+			[
+				"photoswipejs",
+				"bower_components/photoswipe/dist/photoswipe.js"
+			],
+			[
+				"grunf",
+				"Gruntfile.js"
+			],
+			[
+				"main.js",
+				"build/us/js/main.js"
+			],
+			[
+				"main.scs",
+				"build/us/scss/main.scss"
+			],
+			[
+				"index.html",
+				"us/index.html"
+			],
+			[
+				"typography",
+				"build/us/scss/util/_typography.scss"
+			],
+			[
+				"subhead",
+				"build/us/scss/modules/_subheader.scss"
+			],
+			[
+				"header.scs",
+				"build/us/scss/partials/_header.scss"
+			],
+			[
+				"gruntfi",
+				"Gruntfile.js"
+			],
+			[
+				"colors",
+				"build/us/scss/settings/_colors.scss"
+			],
+			[
+				"helper",
+				"build/us/scss/util/_helpers.scss"
+			],
+			[
+				"grid",
+				"build/us/scss/util/_grid.scss"
+			],
+			[
+				"typog",
+				"build/us/scss/settings/_typography.scss"
+			],
+			[
+				"typ",
+				"node_modules/normalize-package-data/lib/typos.json"
+			],
+			[
 				"settings.scs",
 				"build/scss/global/_settings.scss"
 			],
 			[
 				"uttons",
-				"build/scss/_style/layout/_buttons.scss"
-			],
-			[
-				"helpers",
-				"build/scss/_style/util/_helpers.scss"
-			],
-			[
-				"grid.scs",
-				"build/scss/_style/util/_grid.scss"
-			],
-			[
-				"buttons",
 				"build/scss/_style/layout/_buttons.scss"
 			],
 			[
@@ -735,20 +1157,12 @@
 				"content/themes/kim/page-about.php"
 			],
 			[
-				"grid.scss",
-				"build/scss/_style/util/_grid.scss"
-			],
-			[
 				"landi",
 				"content/themes/kim/templates/landing.php"
 			],
 			[
 				"landingpage",
 				"node_modules/grunt-sass/node_modules/node-sass/node_modules/node-gyp/node_modules/path-array/node_modules/array-index/node_modules/debug/node_modules/ms/package.json"
-			],
-			[
-				"main.js",
-				"build/js/main.js"
 			],
 			[
 				"settings",
@@ -815,18 +1229,6 @@
 				"build/scss/_style/partials/_newsletter-signup.scss"
 			],
 			[
-				"typo",
-				"build/scss/_style/util/_typography.scss"
-			],
-			[
-				"main.scs",
-				"build/scss/_style/partials/_main.scss"
-			],
-			[
-				"gruntf",
-				"Gruntfile.js"
-			],
-			[
 				"kimind",
 				"content/themes/kim/index.php"
 			],
@@ -883,16 +1285,8 @@
 				"build/scss/pages/_home.scss"
 			],
 			[
-				"colors",
-				"build/scss/settings/_colors.scss"
-			],
-			[
 				"front",
 				"content/themes/wp-init/front-page.php"
-			],
-			[
-				"typ",
-				"build/scss/util/_typography.scss"
 			],
 			[
 				"style.cs",
@@ -901,10 +1295,6 @@
 			[
 				"copy",
 				"build/scss/modules/_copy-columns.scss"
-			],
-			[
-				"grid",
-				"build/scss/_style/util/_grid.scss"
 			],
 			[
 				"about",
@@ -947,10 +1337,6 @@
 				"package.json"
 			],
 			[
-				"grunt",
-				"Gruntfile.js"
-			],
-			[
 				"ackage",
 				"package.json"
 			],
@@ -965,10 +1351,6 @@
 			[
 				"regis",
 				"src/javascript/components/Registration.jsx"
-			],
-			[
-				"index.html",
-				"src/htdocs/index.html"
 			],
 			[
 				"front-p",
@@ -999,10 +1381,6 @@
 				"content/themes/wp-init/page.php"
 			],
 			[
-				"header.scs",
-				"build/scss/partials/_header.scss"
-			],
-			[
 				"local",
 				"local-config.php"
 			],
@@ -1021,10 +1399,6 @@
 			[
 				"copycol",
 				"build/scss/modules/_copy-columns.scss"
-			],
-			[
-				"typog",
-				"build/scss/settings/_typography.scss"
 			],
 			[
 				"herp",
@@ -1137,66 +1511,6 @@
 			[
 				"contentlist",
 				"astoria-web/assets/scss/modules/_content-list.scss"
-			],
-			[
-				"item.html",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/item.html"
-			],
-			[
-				"video",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/video_embed/vimeo.html"
-			],
-			[
-				"video.html",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/hero/video.html"
-			],
-			[
-				"videolist",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/video_list.html"
-			],
-			[
-				"trackhero",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/track_player/track_player_hero.html"
-			],
-			[
-				"herotrack",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/hero/track.html"
-			],
-			[
-				"gridvideo",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/grid/video.html"
-			],
-			[
-				"postlist",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/post_list.html"
-			],
-			[
-				"item",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/item.html"
-			],
-			[
-				"trackplayer",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/track_player/track_player.html"
-			],
-			[
-				"src/astoria/astoria_web/templates/press2/web/public/property/property.html",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/property/property.html"
-			],
-			[
-				"contentitem",
-				"astoria-web/assets/scss/modules/_content-item.scss"
-			],
-			[
-				"griditem",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/grid/video.html"
-			],
-			[
-				"videohtml",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/item/video_list.html"
-			],
-			[
-				"src/astoria/astoria_web/templates/press2/web/public/public_base.html",
-				"astoria-web/src/astoria/astoria_web/templates/press2/web/public/public_base.html"
 			]
 		],
 		"width": 0.0

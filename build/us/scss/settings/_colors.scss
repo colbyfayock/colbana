@@ -63,8 +63,8 @@ $color-map:
     ( 'grey6' $color-grey6 )
     ( 'grey7' $color-grey7 )
 
-    ( 'primary' $color-red )
-    ( 'secondary' $color-blue )
+    ( 'primary' $color-primary )
+    ( 'secondary' $color-secondary )
 
     ( 'alert' $color-alert )
     ( 'warning' $color-warning )
@@ -87,11 +87,11 @@ $color-map:
     $value: nth($color, 2);
 
     .color-#{$name} {
-        color: $value;
+        color: $value !important;
     }
 
     .background-#{$name} {
-        background-color: $value;
+        background-color: $value !important;
     }
 
 }

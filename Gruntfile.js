@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+        env: grunt.file.readJSON('config.json'),
 
         concat: {
 
@@ -71,6 +72,7 @@ module.exports = function(grunt) {
         },
 
         rsync: {
+
             options: {
                 args: [
                     "-avhzS --progress"
@@ -91,14 +93,25 @@ module.exports = function(grunt) {
                 ],
                 recursive: true
             },
-            deploy: {
+
+            deployus: {
                 options: {
-                    src: '<%= env.rsync.deploy.src %>',
-                    dest: '<%= env.rsync.deploy.dest %>',
-                    host: '<%= env.rsync.deploy.host %>',
+                    src: '<%= env.rsync.deploy.us.src %>',
+                    dest: '<%= env.rsync.deploy.us.dest %>',
+                    host: '<%= env.rsync.deploy.us.host %>',
+                    delete: false
+                }
+            },
+
+            deploybr: {
+                options: {
+                    src: '<%= env.rsync.deploy.br.src %>',
+                    dest: '<%= env.rsync.deploy.br.dest %>',
+                    host: '<%= env.rsync.deploy.br.host %>',
                     delete: false
                 }
             }
+
         },
 
         watch: {

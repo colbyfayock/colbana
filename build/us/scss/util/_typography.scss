@@ -158,6 +158,14 @@ pre {
         font-size: $font-size-copy * 1.4;
     }
 
+    &.font-small {
+        font-size: $font-size-copy * .8;
+    }
+
+    &.font-smaller {
+        font-size: $font-size-copy * .6;
+    }
+
     &:last-child {
         margin-bottom: 0;
     }

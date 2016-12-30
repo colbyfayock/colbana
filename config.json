@@ -1,0 +1,19 @@
+{
+    "rsync": {
+        "deploy": {
+
+            "us": {
+                "src": "./us/",
+                "dest": "~/colbana.com",
+                "host": "colbz@fay.io"
+            },
+
+            "br": {
+                "src": "./br",
+                "dest": "~/br.colbana.com",
+                "host": "colbz@fay.io"
+            }
+
+        }
+    }
+}

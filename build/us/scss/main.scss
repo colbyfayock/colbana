@@ -91,3 +91,8 @@ body {
 @import '../../../bower_components/photoswipe/dist/photoswipe';
 @import '../../../bower_components/photoswipe/dist/default-skin/default-skin';
 @import '../../../bower_components/fontawesome/scss/font-awesome';
+
+.gallery {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
