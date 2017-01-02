@@ -76,7 +76,7 @@ body {
 
 .content {
 
-    &:after {
+    &:before {
         display: block;
         content: '';
         width: 326px;
@@ -84,6 +84,14 @@ body {
         background: url('../images/separator.jpg');
         background-size: 326px;
         margin: 2em auto;
+    }
+
+    &:first-child {
+
+        &:before {
+            display: none;
+        }
+
     }
 
 }
