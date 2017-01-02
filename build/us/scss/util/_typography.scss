@@ -120,25 +120,33 @@ a {
 
     color: $color-primary;
 
-    &:hover,
-    &:focus {
-        color: lighten( $color-primary, 10 );
-    }
+    @include media($notmobile) {
 
-    &:active {
-        color: darken( $color-primary, 10 );
+        &:hover,
+        &:focus {
+            color: lighten( $color-primary, 10 );
+        }
+
+        &:active {
+            color: darken( $color-primary, 10 );
+        }
+
     }
 
     &:visited {
 
         color: $color-primary;
 
-        &:hover {
-            color: lighten( $color-primary, 10 );
-        }
+        @include media($notmobile) {
 
-        &:active {
-            color: darken( $color-primary, 10 );
+            &:hover {
+                color: lighten( $color-primary, 10 );
+            }
+
+            &:active {
+                color: darken( $color-primary, 10 );
+            }
+
         }
 
     }

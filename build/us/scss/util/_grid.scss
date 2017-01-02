@@ -5,6 +5,10 @@ $gutter: modular-scale(1, 2em, $golden) !default;
     @include outer-container(1140px);
     padding: 0 5em;
 
+    @include media($mobile) {
+        padding: 0 1em;
+    }
+
 }
 
 .row {

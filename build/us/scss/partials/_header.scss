@@ -29,7 +29,17 @@
     }
 
     li {
+
         display: inline-block;
+
+        @include media($mobile) {
+
+            display: block;
+            width: 100%;
+            margin: 0 0 1em;
+
+        }
+
     }
 
     a {
@@ -53,24 +63,28 @@
             margin: 0 auto;
         }
 
-        &:hover {
+        @include media($notmobile) {
 
-            color: lighten($color-secondary, 15);
+            &:hover {
 
-            &:before {
-                display: block;
-                background-color: lighten($color-secondary, 15);
+                color: lighten($color-secondary, 15);
+
+                &:before {
+                    display: block;
+                    background-color: lighten($color-secondary, 15);
+                }
+
             }
 
-        }
+            &:active {
 
-        &:active {
+                color: darken($color-secondary, 15);
 
-            color: darken($color-secondary, 15);
+                &:before {
+                    display: block;
+                    background-color: darken($color-secondary, 15);
+                }
 
-            &:before {
-                display: block;
-                background-color: darken($color-secondary, 15);
             }
 
         }

@@ -20,3 +20,13 @@
     }
 
 }
+
+
+@mixin mobile() {
+
+    @media only screen and (max-device-width: 900px) {
+        @content;
+    }
+
+}
+

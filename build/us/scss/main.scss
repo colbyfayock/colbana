@@ -1,12 +1,3 @@
-/*!
-Theme Name: WP-Init
-Theme URI: http://wordpress.com
-Description: Wordpress Init
-Author: Colby Fayock
-Author URI: http://colbyfayock.com
-Version: 1.0
-*/
-
 $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
@@ -79,6 +70,20 @@ body {
 
         }
 
+    }
+
+}
+
+.content {
+
+    &:after {
+        display: block;
+        content: '';
+        width: 326px;
+        height: 100px;
+        background: url('../images/separator.jpg');
+        background-size: 326px;
+        margin: 2em auto;
     }
 
 }
