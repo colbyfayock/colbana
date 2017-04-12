@@ -1,0 +1,97 @@
+$color-red: #cc111e;
+$color-pink: pink;
+$color-magenta: magenta;
+$color-purple: purple;
+$color-indigo: indigo;
+$color-blue: #101dc2;
+$color-cyan: cyan;
+$color-teal: teal;
+$color-green: green;
+$color-yellow: yellow;
+$color-amber: amber;
+$color-orange: orange;
+$color-brown: brown;
+$color-grey: grey;
+
+$color-grey1: lighten($color-grey, 45);
+$color-grey2: lighten($color-grey, 30);
+$color-grey3: lighten($color-grey, 15);
+$color-grey4: $color-grey;
+$color-grey5: darken($color-grey, 15);
+$color-grey6: darken($color-grey, 30);
+$color-grey7: darken($color-grey, 45);
+
+$color-primary: #a0525d;
+$color-secondary: #876b69;
+
+$color-alert: $color-orange;
+$color-alert-background: lighten( $color-alert, 25 );
+
+$color-warning: $color-yellow;
+$color-warning-background: lighten( $color-warning, 25 );
+
+$color-error: $color-red;
+$color-error-background: lighten( $color-error, 25 );
+
+$color-success: $color-green;
+$color-success-background: lighten( $color-success, 25 );
+
+$color-info: $color-blue;
+$color-info-background: lighten( $color-info, 25 );
+
+$color-map:
+    ( 'red' $color-red )
+    ( 'pink' $color-pink )
+    ( 'magenta' $color-magenta )
+    ( 'purple' $color-purple )
+    ( 'indigo' $color-indigo )
+    ( 'blue' $color-blue )
+    ( 'cyan' $color-cyan )
+    ( 'teal' $color-teal )
+    ( 'green' $color-green )
+    ( 'yellow' $color-yellow )
+    ( 'amber' $color-amber )
+    ( 'orange' $color-orange )
+    ( 'brown' $color-brown )
+    ( 'grey' $color-grey )
+
+    ( 'grey1' $color-grey1 )
+    ( 'grey2' $color-grey2 )
+    ( 'grey3' $color-grey3 )
+    ( 'grey4' $color-grey4 )
+    ( 'grey5' $color-grey5 )
+    ( 'grey6' $color-grey6 )
+    ( 'grey7' $color-grey7 )
+
+    ( 'primary' $color-primary )
+    ( 'secondary' $color-secondary )
+
+    ( 'alert' $color-alert )
+    ( 'warning' $color-warning )
+    ( 'error' $color-error )
+    ( 'success' $color-success )
+    ( 'info' $color-info )
+;
+
+
+/*
+* Color Classes
+*
+* Create colors for color classes
+* (.color-blue, .background-blue, etc.)
+*/
+
+@each $color in $color-map {
+
+    $name: nth($color, 1);
+    $value: nth($color, 2);
+
+    .color-#{$name} {
+        color: $value !important;
+    }
+
+    .background-#{$name} {
+        background-color: $value !important;
+    }
+
+}

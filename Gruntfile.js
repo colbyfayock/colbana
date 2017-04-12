@@ -34,6 +34,27 @@ module.exports = function(grunt) {
                 dest: './us/js/colbana.js',
             },
 
+            br: {
+                src: [
+
+                    // Bower components
+
+                    './bower_components/modernizr/modernizr.js',
+                    './bower_components/photoswipe/dist/photoswipe.js',
+                    './bower_components/photoswipe/dist/photoswipe-ui-default.js',
+                    './bower_components/hippify/hippify/hippify.js',
+
+                    './build/br/js/components/**/*.js',
+
+
+                    // Main
+
+                    './build/br/js/main.js'
+
+                ],
+                dest: './br/js/colbana.js',
+            },
+
         },
 
         uglify: {
@@ -52,6 +73,14 @@ module.exports = function(grunt) {
                         './us/js/colbana.js'
                     ]
                 }
+            },
+
+            br: {
+                files: {
+                    './br/js/colbana.min.js': [
+                        './br/js/colbana.js'
+                    ]
+                }
             }
 
         },
@@ -66,6 +95,12 @@ module.exports = function(grunt) {
             us: {
                 files: {
                     './us/css/colbana.min.css': './build/us/scss/main.scss'
+                }
+            },
+
+            br: {
+                files: {
+                    './br/css/colbana.min.css': './build/br/scss/main.scss'
                 }
             }
 
@@ -130,19 +165,40 @@ module.exports = function(grunt) {
                 ]
             },
 
+            br_css: {
+                files: './build/br/scss/**/*.scss',
+                tasks: [
+                    'br_css'
+                ]
+            },
+
+            br_js: {
+                files: './build/br/js/**/*.js',
+                tasks: [
+                    'br_js'
+                ]
+            }
+
         }
 
     });
 
     grunt.registerTask('default', [
+        'css',
+        'js'
     ]);
 
     grunt.registerTask('us_css', [
         'sass:us'
     ]);
 
+    grunt.registerTask('br_css', [
+        'sass:br'
+    ]);
+
     grunt.registerTask('css', [
-        'us_css'
+        'us_css',
+        'br_css'
     ]);
 
     grunt.registerTask('us_js', [
@@ -150,8 +206,22 @@ module.exports = function(grunt) {
         'uglify:us'
     ]);
 
+    grunt.registerTask('br_js', [
+        'concat:br',
+        'uglify:br'
+    ]);
+
     grunt.registerTask('js', [
-        'us_js'
+        'us_js',
+        'br_js'
+    ]);
+
+    grunt.registerTask('deployus', [
+        'rsync:deployus'
+    ]);
+
+    grunt.registerTask('deploybr', [
+        'rsync:deploybr'
     ]);
 
 };

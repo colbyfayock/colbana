@@ -9,8 +9,8 @@
             },
 
             "br": {
-                "src": "./br",
-                "dest": "~/br.colbana.com",
+                "src": "./br/",
+                "dest": "~/colbana.com.br",
                 "host": "colbz@fay.io"
             }
 
