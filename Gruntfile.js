@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
 
-    require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt, {
+        cloudfront: 'grunt-aws'
+    });
 
     grunt.initConfig({
 
@@ -10,7 +12,7 @@ module.exports = function(grunt) {
         concat: {
 
             options: {
-                separator: ';',
+                separator: ';'
             },
 
             us: {
@@ -148,6 +150,23 @@ module.exports = function(grunt) {
 
         },
 
+        cloudfront: {
+            options: {
+                accessKeyId: '<%= config.aws.accessKeyId %>',
+                secretAccessKey: '<%= config.aws.secretAccessKey %>'
+            },
+            us: {
+                options: {
+                    distributionId: '<%= config.aws.buckets.colbanacom.cloudfrontDistributionId %>'
+                }
+            },
+            br: {
+                options: {
+                    distributionId: '<%= config.aws.buckets.colbanacombr.cloudfrontDistributionId %>'
+                }
+            }
+        },
+
         watch: {
 
             us_css: {
@@ -182,10 +201,38 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('default', [
-        'css',
-        'js'
-    ]);
+    // Pulls in the changed files from aws_s3 at run time and pass them
+    // into cloudfront invalidation
+
+    grunt.registerTask('invalidate_cache', 'Invalidate Cloudfront from aws_s3 output', function (subtask) {
+
+        var aws_changed = grunt.config.get('aws_s3_changed'),
+            task = 'cloudfront',
+            changed_files;
+
+        if ( !Array.isArray(aws_changed) ) {
+            console.log('Changed files is not an array');
+            return;
+        }
+
+        changed_files = aws_changed.map(function(file) {
+            return '/' + file;
+        });
+
+        if ( subtask ) {
+            task = task + ':' + subtask;
+        }
+
+        grunt.config.set('cloudfront.options.invalidations', changed_files);
+
+        if ( !Array.isArray(changed_files) || changed_files.length === 0 ) {
+            console.log('No files changed');
+            return;
+        }
+
+        grunt.task.run(task);
+
+    });
 
     grunt.registerTask('us_css', [
         'sass:us'
@@ -193,11 +240,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('br_css', [
         'sass:br'
-    ]);
-
-    grunt.registerTask('css', [
-        'us_css',
-        'br_css'
     ]);
 
     grunt.registerTask('us_js', [
@@ -210,21 +252,18 @@ module.exports = function(grunt) {
         'uglify:br'
     ]);
 
-    grunt.registerTask('js', [
-        'us_js',
-        'br_js'
-    ]);
-
     grunt.registerTask('deployus', [
         'us_css',
         'us_js',
-        'aws_s3:us'
+        'aws_s3:us',
+        'invalidate_cache:us'
     ]);
 
     grunt.registerTask('deploybr', [
         'br_css',
         'br_js',
-        'aws_s3:br'
+        'aws_s3:br',
+        'invalidate_cache:br'
     ]);
 
 };

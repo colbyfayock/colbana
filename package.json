@@ -2,6 +2,7 @@
   "name": "colbana",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-aws": "^0.6.2",
     "grunt-aws-s3": "^2.0.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-cssmin": "^0.14.0",
