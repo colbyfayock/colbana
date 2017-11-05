@@ -1,0 +1,10 @@
+<RoutingRules>
+    <RoutingRule>
+        <Condition>
+            <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
+        </Condition>
+        <Redirect>
+            <ReplaceKeyWith>notfound/</ReplaceKeyWith>
+        </Redirect>
+    </RoutingRule>
+</RoutingRules>
