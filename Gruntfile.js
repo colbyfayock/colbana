@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-        env: grunt.file.readJSON('config.json'),
+        config: grunt.file.readJSON('config.json'),
 
         concat: {
 
@@ -106,46 +106,45 @@ module.exports = function(grunt) {
 
         },
 
-        rsync: {
+        aws_s3: {
 
             options: {
-                args: [
-                    "-avhzS --progress"
-                ],
-                exclude: [
-
-                    ".git*",
-
-                    "build",
-
-                    "bower_components",
-                    "node_modules",
-
-                    "package.json",
-                    "bower.json",
-                    "*.sublime*",
-
-                ],
-                recursive: true
+                accessKeyId: '<%= config.aws.accessKeyId %>',
+                secretAccessKey: '<%= config.aws.secretAccessKey %>',
+                differential: true,
+                uploadConcurrency: 5,
+                downloadConcurrency: 5
+            },
+            
+            us: {
+                options: {
+                    bucket: 'colbana.com',
+                    region: 'us-east-1'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: './us',
+                        src: ['**'],
+                        dest: '/'
+                    }
+                ]
             },
 
-            deployus: {
+            br: {
                 options: {
-                    src: '<%= env.rsync.deploy.us.src %>',
-                    dest: '<%= env.rsync.deploy.us.dest %>',
-                    host: '<%= env.rsync.deploy.us.host %>',
-                    delete: false
-                }
+                    bucket: 'colbana.com.br',
+                    region: 'sa-east-1'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: './br',
+                        src: ['**'],
+                        dest: '/'
+                    }
+                ]
             },
-
-            deploybr: {
-                options: {
-                    src: '<%= env.rsync.deploy.br.src %>',
-                    dest: '<%= env.rsync.deploy.br.dest %>',
-                    host: '<%= env.rsync.deploy.br.host %>',
-                    delete: false
-                }
-            }
 
         },
 
@@ -217,11 +216,15 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('deployus', [
-        'rsync:deployus'
+        'us_css',
+        'us_js',
+        'aws_s3:us'
     ]);
 
     grunt.registerTask('deploybr', [
-        'rsync:deploybr'
+        'br_css',
+        'br_js',
+        'aws_s3:br'
     ]);
 
 };
