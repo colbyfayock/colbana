@@ -44,6 +44,30 @@
         }
       }
 
+      .header-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2em;
+      }
+
+      @media (min-width: 1024px) {
+        .header-links {
+          display: none;
+        }
+      }
+
+      .header-links li {
+        margin: 0 1em;
+      }
+
+      .header-links a {
+        color: #74bab3;
+      }
+
       .container {
         display: flex;
         flex-direction: column;
@@ -164,10 +188,22 @@
 
   <main>
     <div class="header">
+      <ul class="header-links">
+        <li>
+          <a href="#en">
+            English
+          </a>
+        </li>
+        <li>
+          <a href="#pt">
+            Português
+          </a>
+        </li>
+      </ul>
       <img width="250" src="images/porcupine.png" alt="Porcupine with balloons" />
     </div>
     <div class="container container-content">
-      <section class="panel">
+      <section id="en" class="panel">
         <h2 class="panel-title">
           Gregg's Baby Shower
         </h2>
@@ -193,7 +229,7 @@
           With love, Colby, Ana & Gregg
         </p>
       </section>
-      <section class="panel">
+      <section id="pt" class="panel">
         <h2 class="panel-title">
           Chá de Bebê do Gregg
         </h2>
