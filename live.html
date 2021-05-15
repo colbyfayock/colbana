@@ -6,8 +6,9 @@
         margin: 0;
       }
       main {
-        height: calc(100vh - 2em);
+        height: calc(100vh - 4em);
       }
+      header,
       footer {
         height: 2em;
         display: flex;
@@ -16,7 +17,9 @@
         justify-content: center;
         background-color: #74bab3;
       }
+      header p,
       footer p {
+        color: white;
         font-size: .9em;
         margin: 0;
       }
@@ -27,6 +30,15 @@
   </head>
   <body>
     <!-- Add a placeholder for the Twitch embed -->
+    <header>
+      <p>
+        🇺🇸 Saturday, May 15 @ 10:30am ET
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        🇧🇷 Sábado, 15 de Maio @ 13:30 hrs (horário de Brasília)
+      </p>
+    </header>
     <main>
       <div id="twitch-embed"></div>
     </main>
