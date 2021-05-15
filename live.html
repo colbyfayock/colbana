@@ -5,11 +5,40 @@
       body {
         margin: 0;
       }
+      main {
+        height: calc(100vh - 2em);
+      }
+      footer {
+        height: 2em;
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        justify-content: center;
+        background-color: #74bab3;
+      }
+      footer p {
+        font-size: .9em;
+        margin: 0;
+      }
+      footer a {
+        color: white;
+      }
     </style>
   </head>
   <body>
     <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
+    <main>
+      <div id="twitch-embed"></div>
+    </main>
+    <footer>
+      <p>
+        <a href="https://www.twitch.tv/colbana">Log in on Twitch to chat live!</a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="/">Back to colbana.com</a>
+      </p>
+    </footer>
 
     <!-- Load the Twitch embed JavaScript file -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
@@ -21,7 +50,9 @@
         height: "100%",
         channel: "colbana",
         // Only needed if this page is going to be embedded on other websites
-        parent: ["colbana.com"]
+        parent: ["colbana.com"],
+        autoplay: true,
+        layout: 'video'
       });
     </script>
   </body>
